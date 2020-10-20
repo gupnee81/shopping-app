@@ -2,8 +2,6 @@
 This react based front end application demonstrates a small functionality of calculating the cost of a shopping cart on an e-commerce portal. 
 It deals with 3 products which are created locally as part of the initialisation and frontend fetches it at the time of the launch.   
 
-It contains a docker-compose file which will be used to deploy the frontend service seemlessly on any given machine i.e. desktop, virtual machine etc.
-
 Here is the price list to begin with..
 | PRODUCT ID |   PRODUCT NAME     |     PRICE |
 | --- | :--------- | --------: |
