@@ -64,6 +64,9 @@ For simplicity sake, only one promotion code can be applied at a time.
 ## Features
 1. React, React-Hooks
 2. Rules are NOT HARDCODED and seperated in a ./src/utils/pricingrule.ts and made it configurable
+3. Styled-components (CSS-in-Js)
+4. Redux
+5. Typescript with tslint 
 
 
 ## Not addressed

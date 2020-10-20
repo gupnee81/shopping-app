@@ -2,13 +2,15 @@
 import styled from 'styled-components';
 
 export const Heading1 = styled.h1`
-  color: #052d4f;
+  color: ${props => props.theme.color.heading1};
+  font-size: ${props => props.theme.DesktopSize.heading1};
   text-align: center;
   width: 100%;
 `;
 
 export const Heading2 = styled.h2`
-  color: #052d4f;
+  color: ${props => props.theme.color.divColor};
+  font-size: ${props => props.theme.DesktopSize.heading2};
 `;
 
 export const ProductsContainer = styled.div`
@@ -62,18 +64,18 @@ export const ProductInfoWrapper = styled.div`
 `;
 
 export const ProductPrice = styled.div`
-  font-size: 26px;
+  font-size: ${props => props.theme.DesktopSize.price};
   font-family: arial;
   font-weight: 700;
-  color: #052d4f;
+  color: ${props => props.theme.color.divColor};
   line-height: 1;
 `;
 
 export const ProductName = styled.div`
-  font-size: 20px;
+  font-size: ${props => props.theme.DesktopSize.name};
   font-family: arial;
   font-weight: 700;
-  color: #052d4f;
+  color: ${props => props.theme.color.divColor};
   line-height: 1;
   margin: 8px 0;
 `;
@@ -97,9 +99,9 @@ export const ProductButtonWrapper = styled.button`
   box-shadow: none;
   padding: 10px 20px;
   cursor: pointer;
-  background-color: #ff6d05;
-  border-color: #ff6d05;
-  color: #fff;
+  background-color: ${props => props.theme.color.buttonBackgroundColor};
+  border-color: ${props => props.theme.color.buttonBorderColor};
+  color:${props => props.theme.color.white};
   width: 100%;
   text-align: center;
 `;

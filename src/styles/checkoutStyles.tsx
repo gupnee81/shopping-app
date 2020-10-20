@@ -4,7 +4,7 @@ export const Heading1 = styled.h1`
   color: green;
 `;
 export const CartItemRowWrapper = styled.div`
-  border-bottom: 1px dotted grey;
+  border-bottom: 1px dotted ${props => props.theme.color.grey};
   margin: 0 20px;
 `;
 
@@ -30,8 +30,8 @@ export const ProductImage = styled(CartRow)`
 `;
 
 export const ProductName = styled(CartRow)`
-  color: #052d4f;
-  font-size: 20px;
+  color: ${props => props.theme.color.divColor};
+  font-size: ${props => props.theme.DesktopSize.name};
   font-weight: bold;
 
   > span {
@@ -42,10 +42,10 @@ export const ProductName = styled(CartRow)`
 `;
 
 export const ProductPrice = styled(CartRow)`
-  color: #052d4f;
+  color: ${props => props.theme.color.divColor};
   width: 30%;
   font-weight: bold;
-  font-size: 24px;
+  font-size: ${props => props.theme.DesktopSize.price};
 
   > span {
     font-size: 16px;
@@ -82,7 +82,7 @@ export const Table = styled.div`
 export const Row = styled.div`
   flex: 1 1 auto;
   width: 100%;
-  border: 0px dotted grey;
+  border: 0px dotted ${props => props.theme.color.grey};;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -91,13 +91,13 @@ export const Row = styled.div`
 
 export const Cell1 = styled.div`
   flex: 0 0 50%;
-  background: #fff;
+  background: ${props => props.theme.color.white};
 `;
 
 export const Cell2 = styled.div`
   flex: 0 0 30%;
   margin-left: 2%;
-  background: #fff;
+  background: ${props => props.theme.color.white};
 `;
 
 export const PromoAndBillingTable = styled.div`
