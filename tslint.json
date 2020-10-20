@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-react-a11y",
+    "tslint-config-airbnb"
+  ],
+  "rules": {
+    "quotemark": [true, "single", "avoid-escape", "jsx-single"],
+    "space-in-parens": [false],
+    "align": false,
+    "jsx-no-lambda": false,
+    "react-a11y-role-has-required-aria-props": false,
+    "import-name": false,
+    "max-line-length": [false],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["**/*.js", "**/*.d.ts"]
+  }
+}
